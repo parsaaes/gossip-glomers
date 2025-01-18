@@ -58,8 +58,8 @@ func main() {
 		id := fmt.Sprintf(idFormat, machineID, t, aid.getAndIncrease(t))
 
 		return n.Reply(msg, map[string]any{
-			"generate": "generate_ok",
-			"id":       id,
+			"type": "generate_ok",
+			"id":   id,
 		})
 	})
 
